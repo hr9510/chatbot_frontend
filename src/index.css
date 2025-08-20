@@ -1,0 +1,50 @@
+.app {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.query-form {
+    margin: 20px 0;
+}
+
+.query-form input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.query-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fetch-btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.queries {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.query-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}

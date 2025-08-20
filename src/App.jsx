@@ -58,7 +58,7 @@ const fetchQueries = async () => {
         </button>
       </form>
 
-      <button onClick={()=>{fetchQueries() , setShow(!show)}} className="fetch-btn">
+      <button onClick={()=>{fetchQueries()}} className="fetch-btn">
         Get All Queries
       </button>
 

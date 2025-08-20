@@ -5,7 +5,6 @@ function App() {
   const [query, setQuery] = useState("");
   const [queries, setQueries] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [show, setShow] = useState(false)
 
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -60,11 +59,11 @@ const fetchQueries = async () => {
       </form>
 
       <button onClick={()=>{fetchQueries() , setShow(!show)}} className="fetch-btn">
-        {show?"HIDE":"Get"} All Queries
+        Get All Queries
       </button>
 
       {/* Display Queries */}
-      {show ? <div className="queries">
+      <div className="queries">
         {queries.length > 0 ? (
           queries.map((item, index) => (
             <div key={index} className="query-card">
@@ -76,8 +75,6 @@ const fetchQueries = async () => {
           <p>No queries yet. Ask something!</p>
         )}
       </div>
-        : 
-      ""}
     </div>
   );
 }

@@ -14,7 +14,7 @@ const handleSubmit = async (e) => {
   setLoading(true);
 
   try {
-    const res = await fetch("http://localhost:5000/setUserQuery", {
+    const res = await fetch("https://chatbot-backend-h5dt.onrender.com/setUserQuery", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ user_query: query }),
@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
 
 const fetchQueries = async () => {
   try {
-    const res = await fetch("http://localhost:5000/getUserQueries");
+    const res = await fetch("https://chatbot-backend-h5dt.onrender.com/getUserQueries");
     const data = await res.json();
     setQueries(data.reverse());
   } catch (error) {
